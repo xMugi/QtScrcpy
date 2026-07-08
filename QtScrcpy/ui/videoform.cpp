@@ -531,15 +531,14 @@ void VideoForm::updateFPS(quint32 fps)
 }
 
 void VideoForm::grabCursor(bool grab)
+{
+    QRect rc = getGrabCursorRect();
+    MouseTap::getInstance()->enableMouseEventTap(rc, grab);
+}
 
 void VideoForm::setVMouse(bool state)
 {
     Q_UNUSED(state);
-}
-
-{
-    QRect rc = getGrabCursorRect();
-    MouseTap::getInstance()->enableMouseEventTap(rc, grab);
 }
 
 void VideoForm::onFrame(int width, int height, uint8_t *dataY, uint8_t *dataU, uint8_t *dataV, int linesizeY, int linesizeU, int linesizeV)
