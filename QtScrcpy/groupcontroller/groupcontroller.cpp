@@ -262,7 +262,7 @@ void GroupController::postCut()
     }
 }
 
-void GroupController::setDisplayPower(bool on)
+void GroupController::setScreenPowerMode(bool on)
 {
     for (const auto& serial : m_devices) {
         if (true == isHost(serial)) {
@@ -273,7 +273,7 @@ void GroupController::setDisplayPower(bool on)
             continue;
         }
 
-        device->setDisplayPower(on);
+        device->setScreenPowerMode(on);
     }
 }
 

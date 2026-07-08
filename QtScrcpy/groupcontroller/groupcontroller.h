@@ -31,7 +31,7 @@ private:
     void postVolumeDown() override;
     void postCopy() override;
     void postCut() override;
-    void setDisplayPower(bool on) override;
+    void setScreenPowerMode(bool on) override;
     void expandNotificationPanel() override;
     void collapsePanel() override;
     void postBackOrScreenOn(bool down) override;

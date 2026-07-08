@@ -70,6 +70,7 @@ protected:
     void dropEvent(QDropEvent *event) override;
 
 private:
+    bool show_toolbar = false;
     // ui
     Ui::videoForm *ui;
     QPointer<ToolForm> m_toolForm;
