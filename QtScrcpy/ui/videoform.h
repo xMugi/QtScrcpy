@@ -39,6 +39,7 @@ private:
                  int linesizeY, int linesizeU, int linesizeV) override;
     void updateFPS(quint32 fps) override;
     void grabCursor(bool grab) override;
+    void setVMouse(bool grab) override;
 
     void updateStyleSheet(bool vertical);
     QMargins getMargins(bool vertical);
@@ -86,7 +87,6 @@ private:
     QString m_serial;
 
     //Whether to display the toolbar when connecting a device.
-    bool show_toolbar = true;
 };
 
 #endif // VIDEOFORM_H

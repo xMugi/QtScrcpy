@@ -900,3 +900,33 @@ void Dialog::showPortEditMenu(const QPoint &pos)
     menu->exec(ui->devicePortEdt->lineEdit()->mapToGlobal(pos));
     delete menu;
 }
+
+void Dialog::on_installVmouseBtn_clicked()
+{
+    //m_vmouseCtr.installonly(ui->serialBox->currentText(), 9999);
+}
+
+void Dialog::on_connectVmouseBtn_clicked()
+{
+    //m_vmouseCtr.start(ui->serialBox->currentText(), 9999);
+}
+
+void Dialog::on_wBtn_clicked()
+{
+    //m_vmouseCtr.sendMsg(VMouseControl::HIDE,5,5);
+}
+
+void Dialog::on_sBtn_clicked()
+{
+    //m_vmouseCtr.sendMsg(VMouseControl::SHOW,50,200);
+}
+
+void Dialog::on_aBtn_clicked()
+{
+    //m_vmouseCtr.sendMsg('2');
+}
+
+void Dialog::on_dBtn_clicked()
+{
+    //m_vmouseCtr.sendMsg('3');
+}

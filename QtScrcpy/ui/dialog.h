@@ -64,6 +64,12 @@ private slots:
     void on_stopAudioBtn_clicked();
 
     void on_installSndcpyBtn_clicked();
+    void on_connectVmouseBtn_clicked();
+    void on_installVmouseBtn_clicked();
+    void on_wBtn_clicked();
+    void on_sBtn_clicked();
+    void on_aBtn_clicked();
+    void on_dBtn_clicked();
 
     void on_autoUpdatecheckBox_toggled(bool checked);
 

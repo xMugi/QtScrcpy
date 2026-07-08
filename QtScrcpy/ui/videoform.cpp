@@ -294,7 +294,7 @@ void VideoForm::installShortcut()
         if (!device) {
             return;
         }
-        emit device->setDisplayPower(false);
+        emit device->setScreenPowerMode(false);
     });
 
     // expandNotificationPanel
@@ -531,6 +531,12 @@ void VideoForm::updateFPS(quint32 fps)
 }
 
 void VideoForm::grabCursor(bool grab)
+
+void VideoForm::setVMouse(bool state)
+{
+    Q_UNUSED(state);
+}
+
 {
     QRect rc = getGrabCursorRect();
     MouseTap::getInstance()->enableMouseEventTap(rc, grab);
